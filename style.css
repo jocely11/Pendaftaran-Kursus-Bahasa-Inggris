@@ -1,0 +1,202 @@
+
+/* Pengaturan dasar */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7f8;
+    color: #172033;
+}
+
+/* Bagian header */
+header {
+    background: white;
+    padding: 25px 6%;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+header h1 {
+    color: #198b5b;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #68758a;
+}
+
+/* Container utama */
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Banner diskon melayang */
+.banner {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #20895e;
+    color: white;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px #00000012;
+}
+
+.banner h2 {
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+.banner p {
+    margin: 0;
+}
+
+/* Kartu konten */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px #00000008;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Tabel jadwal kelas */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    background: #f0f2f5;
+}
+
+tbody tr:hover td {
+    background: #f1faf5;
+}
+
+/* Form pendaftaran */
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #198b5b;
+    border-color: #198b5b;
+}
+
+/* Pesan validasi */
+.hint {
+    color: #68758a;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.hint.error {
+    color: #dc2626;
+}
+
+.invalid {
+    border-color: #dc2626;
+    background: #fff8f8;
+}
+
+/* Tombol */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 20px;
+    font-size: 14px;
+}
+
+.btn-daftar {
+    width: 100%;
+    background: #198b5b;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-daftar:hover {
+    background: #08794b;
+}
+
+/* Pesan pendaftaran berhasil */
+.success {
+    display: none;
+    background: #eaf7f0;
+    color: #08794b;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #68758a;
+}
+
+/* Tampilan untuk layar HP */
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .container {
+        margin-top: 20px;
+        padding: 0 12px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    th,
+    td {
+        padding: 9px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Kursus Bahasa Asing</title>
+
+    <!-- Menghubungkan HTML dengan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pendaftaran Kursus Bahasa Asing</h1>
+        <p>Registrasi kelas persiapan TOEFL / IELTS</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Banner diskon -->
+        <section class="banner">
+            <h2>Diskon 20% Kelas TOEFL &amp; IELTS</h2>
+            <p>Daftar sebelum 31 Oktober!</p>
+        </section>
+
+        <!-- Tabel jadwal kelas -->
+        <section class="card">
+            <h2>Jadwal Kelas</h2>
+            <p>Pilih kelas yang sesuai dengan kebutuhanmu.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kelas</th>
+                            <th>Jadwal</th>
+                            <th>Sisa Kuota</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>TOEFL Preparation</td>
+                            <td>Senin &amp; Rabu</td>
+                            <td>5 kursi</td>
+                        </tr>
+
+                        <tr>
+                            <td>IELTS Academic</td>
+                            <td>Selasa &amp; Kamis</td>
+                            <td>8 kursi</td>
+                        </tr>
+
+                        <tr>
+                            <td>TOEFL Intensif</td>
+                            <td>Sabtu</td>
+                            <td>2 kursi</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Form pendaftaran -->
+        <section class="card">
+            <h2>Form Pendaftaran</h2>
+
+            <form id="registrationForm" novalidate>
+
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        placeholder="Masukkan nama lengkap"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="kelas">Pilih Kelas</label>
+
+                    <select id="kelas" required>
+                        <option value="">-- Pilih kelas --</option>
+                        <option value="TOEFL Preparation">
+                            TOEFL Preparation
+                        </option>
+                        <option value="IELTS Academic">
+                            IELTS Academic
+                        </option>
+                        <option value="TOEFL Intensif">
+                            TOEFL Intensif
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="skor">Target Skor TOEFL</label>
+
+                    <input
+                        type="number"
+                        id="skor"
+                        placeholder="Contoh: 600"
+                        min="1"
+                        max="677"
+                        required
+                    >
+
+                    <p class="hint" id="pesanSkor">
+                        Skor TOEFL ITP maksimal adalah 677.
+                    </p>
+                </div>
+
+                <button type="submit" class="btn-daftar">
+                    Daftar Sekarang
+                </button>
+            </form>
+
+            <!-- Hasil pendaftaran -->
+            <div class="success" id="hasil" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Kursus Bahasa Asing
+    </footer>
+
+    <!-- Menghubungkan HTML dengan JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
